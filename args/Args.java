@@ -1,6 +1,6 @@
 public class Args{
-	public static void main(String[] arg){
-		for(String s: arg){
+	public static void main(String[] args){
+		for(String s: args){
 			System.out.println(s);
 		}
 	}
