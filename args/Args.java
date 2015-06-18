@@ -1,7 +1,9 @@
 public class Args{
 	public static void main(String[] args){
-		for(String s: args){
-			System.out.println(s);
-		}
+		int i = 1;
+			for (String arg : args) {
+				System.out.printf("%3d. %s\n", i, arg);
+					++i;
+			}
 	}
 }
