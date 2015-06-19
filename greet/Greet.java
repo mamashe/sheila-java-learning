@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class Greet{
 	public static void main(String[] args){
 		System.out.println("Hi there. What is your name? ");
-			Scanner name = new Scanner(System.in);
-				System.out.println(name.nextLine());
+			Scanner scanner = new Scanner(System.in);
+				String name = scanner.nextLine();
 					if (name == " "){
 						System.out.println("Coward!");
 					}
