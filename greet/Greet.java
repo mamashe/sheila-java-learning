@@ -4,7 +4,7 @@ public class Greet{
 		System.out.println("Hi there. What is your name? ");
 			Scanner scanner = new Scanner(System.in);
 				String name = scanner.nextLine();
-					if (name == " "){
+					if (name.equals("")){
 						System.out.println("Coward!");
 					}
 							else{
