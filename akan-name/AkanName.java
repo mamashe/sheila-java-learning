@@ -3,10 +3,10 @@ import java.io.Console;
 public class AkanName{
     
     public static int readDayOfWeek(){
-        String[] weekDays = {"Monday", "Tuesday", "Wednessday", "Thursday", "Friday", "Saturday", "Sunday"};
+        String[] weekDays = {"MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"};
         Console console = System.console();
         while(true){
-            String input = console.readLine("Enter A Day Of The Week: ");
+            String input = console.readLine("Enter A Day Of The Week: ").toUpperCase();
             for(int i = 0; i<weekDays.length; ++i){
                 if(input.equals (weekDays[i])){
                     return i;
@@ -21,12 +21,12 @@ public class AkanName{
     public static int readGender(){
         Console console = System.console();
         while(true){
-            String input = console.readLine("Enter Your Gender: ");
+            String input = console.readLine("Enter Your Gender: ").toLowerCase();
             if(input.equals("male")){
-                return 0;
+                return 1;
             }
             else if(input.equals("female")){
-                return 1;
+                return 0;
             }
             else{
                 System.out.println("Sorry wrong gender type");
@@ -42,7 +42,7 @@ public class AkanName{
         int dayIndex = readDayOfWeek();
         
         //System.out.println("I got: " + gender);
-        if(gender == 0){
+        if(gender == 1){
             System.out.println("That Corresponds to: " + maleNames[dayIndex]);
         }
         else{
