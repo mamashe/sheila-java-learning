@@ -9,7 +9,7 @@ public class Triangle{
         System.out.println("What is the height of a triangle? ");
         height = scanner.nextInt();
         ans = base * height/2;
-        System.out.printf("The Area Of A Triangle is %d. ", ans);
+        System.out.printf("The Area Of A Triangle is %2f. ", ans);
         
     }
 }    
