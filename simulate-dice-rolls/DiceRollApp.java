@@ -7,6 +7,7 @@ public class DiceRollApp{
         System.out.println("Enter the number of times you want to roll the dice: ");
         Scanner scanner = new Scanner(System.in);
         int input = scanner.nextInt();
+        System.out.printf("Rolled a dice %d times. Distribution: \n", input);
         
         Random random = new Random();
         
@@ -25,7 +26,7 @@ public class DiceRollApp{
         }
         
         for(Integer k: dice.keySet()){
-        System.out.printf("%d: %d\n ", k, dice.get(k));
+        System.out.printf("%d : %d\n ", k, dice.get(k));
         }
     }
 }
